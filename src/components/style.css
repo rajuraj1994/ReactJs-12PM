@@ -1,0 +1,40 @@
+.custom-header{
+    background-color: #131921;
+}
+.custom-img{
+    height:520px;
+}
+.card img{
+    height:200px;
+}
+footer{
+    background-color: #131921;
+    color:#ffff !important;
+}
+.deals-type{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.deals-type a{
+    color:#4fabd1;
+}
+.custom-slide{
+    height:200px
+}
+.slick-slide{
+    padding:0 10px;
+}
+.slick-list{
+    margin:0 2em;
+}
+.slick-prev{
+    left:1% !important
+}
+.slick-next{
+    right:1% !important
+}
+.slick-prev:before,.slick-next:before{
+    color:orangered !important;
+    /* line-height: 1; */
+    font-size: 35px;
+}
