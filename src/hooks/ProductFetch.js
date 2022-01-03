@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react' // useState for product data  // useEffect for fetching data
 import axios from 'axios' // axios is a library that makes http requests
+import Product from './Product'
 
 const ProductFetch = () => {
   // useState for product data
@@ -27,13 +28,13 @@ const ProductFetch = () => {
     // JSX is a syntax for writing HTML in Javascript
     <>
       <div className='row'> {/* .row is a bootstrap class */}
-        {products.map((product) => (    // .map is a method that takes in an array and returns an array of JSX
-          <div className='col-md-3' key={product.id}>   {/* .col-md-3 is a bootstrap class */}  {/* key is a React property that allows us to uniquely identify each element in an array */}
-            <h1>{product.title}</h1>    {/* .title is a property that is on the product object */}
-            <img src={product.image} alt={product.title} />  {/* .image is a property that is on the product object */}
-            <p>{product.price}</p>   {/* .price is a property that is on the product object */} 
-            <p>{product.body}</p>   {/* .body is a property that is on the product object */}
-          </div>
+        {products.map((product) => (    // .map is a method that takes in an array and returns an array of JSX  // product is a variable that represents each item in the array of products // product is an object that represents each product in the array of products 
+          <Product  // Product is a component that we want to render
+              key={product.id}      // key is a property that tells React that this element should be unique  // product.id is the id of the product
+              title={product.title} // title is a prop  // product.title is the title of the product
+              image={product.image} // image is a prop  // product.image is the image of the product
+              price={product.price} // price is a prop  // product.price is the price of the product
+            /> 
         ))}
       </div>
     </>
