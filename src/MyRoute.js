@@ -5,6 +5,8 @@ import HomePage from './pages/HomePage'
 import Signin from './pages/Signin'
 import Signup from './pages/Signup'
 import Test from './hooks/Test'
+import DataFetch from './hooks/DataFetch'
+import ProductFetch from './hooks/ProductFetch'
 
 const MyRoute = () => {
   return (
@@ -18,6 +20,8 @@ const MyRoute = () => {
         <Route path='/increment' element={<IncrementDecrement />} />
 
         <Route path='/hooks' element={<Test />} />
+        <Route path='/data' element={<DataFetch />} />
+        <Route path='/products' element={<ProductFetch />} />
       </Routes>
     </Router>
   )
