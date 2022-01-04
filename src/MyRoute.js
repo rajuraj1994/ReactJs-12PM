@@ -8,6 +8,7 @@ import Test from './hooks/Test'
 import DataFetch from './hooks/DataFetch'
 import ProductFetch from './hooks/ProductFetch'
 import Main from './hooks/Main'
+import Show from './context/Show'
 
 const MyRoute = () => {
   return (
@@ -24,6 +25,9 @@ const MyRoute = () => {
         <Route path='/data' element={<DataFetch />} />
         <Route path='/products' element={<ProductFetch />} />
         <Route path='/main' element={<Main />} />
+
+        {/* context */}
+        <Route path='/context' element={<Show />} />
       </Routes>
     </Router>
   )
