@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
+import Item from './Item'
 
 const DataFetch = () => {
   const [posts, setPosts] = useState([])
@@ -21,10 +22,7 @@ const DataFetch = () => {
     <>
       <div className='row'>
         {posts.map((post) => (
-          <div className='col-md-3' key={post.id}>
-            <h1>{post.title}</h1>
-            <p>{post.body}</p>
-          </div>
+          <Item data={post} key={post.id} />
         ))}
       </div>
     </>
