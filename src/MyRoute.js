@@ -9,6 +9,7 @@ import DataFetch from './hooks/DataFetch'
 import ProductFetch from './hooks/ProductFetch'
 import Main from './hooks/Main'
 import Show from './context/Show'
+import FormValidation from './validation/FormValidation'
 
 const MyRoute = () => {
   return (
@@ -28,6 +29,8 @@ const MyRoute = () => {
 
         {/* context */}
         <Route path='/context' element={<Show />} />
+
+        <Route path='/validation' element={<FormValidation />} />
       </Routes>
     </Router>
   )
