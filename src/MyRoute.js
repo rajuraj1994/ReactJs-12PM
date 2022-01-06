@@ -10,6 +10,7 @@ import ProductFetch from './hooks/ProductFetch'
 import Main from './hooks/Main'
 import Show from './context/Show'
 import FormValidation from './validation/FormValidation'
+import MainPage from './redux/MainPage'
 
 const MyRoute = () => {
   return (
@@ -31,6 +32,8 @@ const MyRoute = () => {
         <Route path='/context' element={<Show />} />
 
         <Route path='/validation' element={<FormValidation />} />
+
+        <Route path='/reduxdemo' element={<MainPage />} />
       </Routes>
     </Router>
   )
